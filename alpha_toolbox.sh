@@ -9,8 +9,8 @@ declare -a PIDS
 
 REDES_SOCIALES=(""" \n
         instagram: https://instagram.com/lexy_argento \n
-        Twitter/X: https://x.com/Lexy_Argento \n
-        patreon: https://patreon.com/Lexy_Argento \n
+        Twitter/X: https://x.com/LexyTheCyberCat \n
+        patreon: https://patreon.com/lexythecybercat \n
         canal de Telegram: https://t.me/sanity_not_found_404 \n
         """
 )
@@ -57,9 +57,9 @@ function menu_interactivo() {
                 case $opcion in
                 1)
                    firefox "https://app.hackthebox.com/machines"
-                   xterm -title "searchsploit - Console" -e "$ubicacion/interactive/exploitdb.sh" & PIDS+=($!)
+                   xterm -title "searchsploit - Console" -e "$ubicacion/exploitdb.sh" & PIDS+=($!)
                    sleep 1
-                   xterm -title "Nmap Interactivo" -e "$ubicacion/interactive/interactive.sh" & PIDS+=($!)
+                   xterm -title "Nmap Interactivo" -e "$ubicacion/interactive.sh" & PIDS+=($!)
                    sleep 1
                    echo "Herramientas lanzadas sus PIDS: ${PIDS[@]}"
                    ;;
